@@ -23,7 +23,24 @@ namespace WeatherAnalyzer
         public MainWindow()
         {
             InitializeComponent();
+
+            ListCities.ItemsSource = new List<string>()
+            {
+                "Moscow", "Novosibirsk", "Volgograd"
+            };
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Threading.DispatcherTimer timer = new System.Windows.Threading.DispatcherTimer();
+
+            timer.Tick += new EventHandler(timerTick);
+            timer.Interval = new TimeSpan(0, 0, 1);
+            timer.Start();
+        }
+
+        private void timerTick(object sender, EventArgs e) => BlockDateTime.Text = DateTime.Now.ToString();
+
 
         private void Button_ClickЬMinimize(object sender, RoutedEventArgs e) => WindowState = WindowState.Minimized;
         
@@ -31,8 +48,13 @@ namespace WeatherAnalyzer
         private void Button_ClickClose(object sender, RoutedEventArgs e) => Close();
         
 
-        private void Button_ClickMaximize(object sender, RoutedEventArgs e) =>
-            WindowState = (WindowState == WindowState.Normal) ? WindowState.Maximized : WindowState.Normal;
+        private void Button_ClickMaximize(object sender, RoutedEventArgs e) => 
+            MessageBox.Show("Can`t resize.", "Information", MessageBoxButton.OK, MessageBoxImage.Information);
+
+        private void ListCities_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            TitleCity.Text = ListCities.SelectedItem.ToString();
+        }
 
         
     }

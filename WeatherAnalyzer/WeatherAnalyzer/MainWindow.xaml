@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherAnalyzer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="600" Width="800"
         AllowsTransparency="True" Background="Transparent"  
-        WindowStyle="None" WindowStartupLocation="CenterScreen">
+        WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Loaded="Window_Loaded">
     <Window.Resources>
         <ControlTemplate x:Key="btnHeaderTemplate" TargetType="Button">
             <Border CornerRadius="25" x:Name="TargetBorder"
@@ -72,7 +73,7 @@
         </Style>
 
         <Style x:Key="textInCopy" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontSize" Value="24"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontFamily" Value="microsoft YaHei UI Light"/>
             <Setter Property="Margin" Value="30,0,0,0"/>
@@ -97,8 +98,12 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                
-                <!--Вставить images будет иконка перед лого-->
+
+                <Image Source="images/planet-earth.png"
+                       Width="30"
+                       Height="30"
+                       HorizontalAlignment="Left"
+                       Margin="10,0,0,0"/>
                 <TextBlock Text="Copy Digital" 
                            Margin="50,0,0,0"
                            VerticalAlignment="Center"
@@ -140,8 +145,46 @@
 
                             </Grid>
 
-                        </Grid>
+                            <TextBlock x:Name="TitleCity" 
+                                       Text="Moscow" Style="{StaticResource textInCopy}"/>
 
+                            <ComboBox Grid.Row="1" 
+                                      x:Name="ListCities"
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Left"
+                                      Margin="30,10,0,0"
+                                      Width="150"
+                                      SelectionChanged="ListCities_SelectionChanged"/>
+
+                            <StackPanel Grid.Row="2"
+                                        Margin="30,100,0,0"
+                                        Orientation="Horizontal">
+                                <Image Source="images/humidity.png"
+                                       Width="50"/>
+                                <TextBlock Style="{StaticResource textInCopy}"
+                                        Text="5%"
+                                           FontSize="28"/>
+                                <Image Source="images/temperature.png"
+                                       Width="50"/>
+                                <TextBlock Style="{StaticResource textInCopy}"
+                                        Text="22"
+                                           FontSize="28"/>
+                                <Image Source="images/wind.png"
+                                       Width="50"/>
+                                <TextBlock Style="{StaticResource textInCopy}"
+                                        Text="7 м/с"
+                                           FontSize="28"/>
+                            </StackPanel>
+                            
+                            <TextBlock x:Name="BlockDateTime" 
+                                       Width="500"
+                                       Grid.Row="3"
+                                       HorizontalAlignment="Center"
+                                       Margin="0,100,0,0"
+                                       Style="{StaticResource textInCopy}"
+                                       FontSize="50"/>
+
+                        </Grid>
                     </TabItem>
                     
                     <TabItem Header="Statistic" Style="{StaticResource SidebarTab}">
