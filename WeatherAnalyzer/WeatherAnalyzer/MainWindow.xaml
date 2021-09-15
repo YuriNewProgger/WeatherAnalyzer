@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
         AllowsTransparency="True" Background="Transparent"  
-        WindowStyle="None">
+        WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ControlTemplate x:Key="btnHeaderTemplate" TargetType="Button">
             <Border CornerRadius="25" x:Name="TargetBorder"
@@ -108,11 +108,11 @@
                             Margin="10,10">
                     <Button Style="{StaticResource btnForHeader}"
                             Background="#12b875" Margin="0,0,10,0"
-                            Click="Button_Click_Minimize"/>
+                            Click="Button_ClickЬMinimize"/>
                     <Button Style="{StaticResource btnForHeader}"
                             Background="#b28c04" Margin="0,0,10,0"
-                            Click="Button_Click_Maximize"/>
-                    <Button Click="Button_Click_Close" 
+                            Click="Button_ClickMaximize"/>
+                    <Button Click="Button_ClickClose" 
                             Style="{StaticResource btnForHeader}"
                             Background="#c2463d"/>
                 </StackPanel>

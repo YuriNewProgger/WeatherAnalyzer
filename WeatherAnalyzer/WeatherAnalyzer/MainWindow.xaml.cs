@@ -24,5 +24,16 @@ namespace WeatherAnalyzer
         {
             InitializeComponent();
         }
+
+        private void Button_ClickЬMinimize(object sender, RoutedEventArgs e) => WindowState = WindowState.Minimized;
+        
+
+        private void Button_ClickClose(object sender, RoutedEventArgs e) => Close();
+        
+
+        private void Button_ClickMaximize(object sender, RoutedEventArgs e) =>
+            WindowState = (WindowState == WindowState.Normal) ? WindowState.Maximized : WindowState.Normal;
+
+        
     }
 }
