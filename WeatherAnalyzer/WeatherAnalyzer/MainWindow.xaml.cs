@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,14 +23,26 @@ namespace WeatherAnalyzer
     /// </summary>
     public partial class MainWindow : Window
     {
+        //https://weather-analyzer-prod.herokuapp.com/weather/moscow
+        //https://weather-analyzer-prod.herokuapp.com/weather/london
+        //https://weather-analyzer-prod.herokuapp.com/weather/paris
+
+        private Dictionary<string, string> Cities = new Dictionary<string, string>()
+        {
+            {"Moscow",  "https://weather-analyzer-prod.herokuapp.com/weather/moscow"},
+            {"London",  "https://weather-analyzer-prod.herokuapp.com/weather/london"},
+            {"Paris",  "https://weather-analyzer-prod.herokuapp.com/weather/paris"},
+        };
+
         public MainWindow()
         {
             InitializeComponent();
 
             ListCities.ItemsSource = new List<string>()
             {
-                "Moscow", "Novosibirsk", "Volgograd"
+                "Moscow", "Paris", "London"
             };
+            ListCities.SelectedIndex = 0;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -54,8 +69,28 @@ namespace WeatherAnalyzer
         private void ListCities_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             TitleCity.Text = ListCities.SelectedItem.ToString();
+
+            string references = Cities.Where(i => i.Key == TitleCity.Text).FirstOrDefault().Value;
+
+            HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(references);
+            WebResponse response = webRequest.GetResponse();
+            string values;
+
+            using (Stream stream = response.GetResponseStream())
+            {
+                using (StreamReader reader = new StreamReader(stream))
+                    values = reader.ReadToEnd();
+
+            }
+
+            
+            var weather = JsonConvert.DeserializeObject<Weather>(values);
+
+            HumidityBlock.Text = weather.humidity.ToString();
+            TempBlock.Text = weather.temp.ToString();
+            WindSpeedBlock.Text = weather.wind_speed.ToString();
         }
 
-        
+        private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) => this.DragMove();
     }
 }

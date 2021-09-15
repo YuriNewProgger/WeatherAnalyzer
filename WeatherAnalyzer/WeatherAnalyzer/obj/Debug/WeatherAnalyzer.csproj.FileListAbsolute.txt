@@ -13,3 +13,6 @@ C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debu
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.exe
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.pdb
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.csproj.AssemblyReference.cache
+C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.csproj.CopyComplete
