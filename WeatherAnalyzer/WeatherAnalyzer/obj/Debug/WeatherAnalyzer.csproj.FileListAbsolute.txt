@@ -1,6 +1,9 @@
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\WeatherAnalyzer.exe.config
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\WeatherAnalyzer.exe
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\WeatherAnalyzer.pdb
+C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\DotNetProjects.DataVisualization.Toolkit.dll
+C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\MainWindow.g.cs
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\App.g.cs
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer_MarkupCompile.cache
@@ -10,9 +13,7 @@ C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debu
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.Properties.Resources.resources
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.csproj.GenerateResource.cache
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.csproj.CopyComplete
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.exe
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.pdb
 C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.csproj.AssemblyReference.cache
-C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Dampel\Desktop\WeatherAnalyzer\WeatherAnalyzer\WeatherAnalyzer\obj\Debug\WeatherAnalyzer.csproj.CopyComplete

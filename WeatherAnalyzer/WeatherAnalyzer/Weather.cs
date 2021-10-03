@@ -30,8 +30,8 @@ namespace WeatherAnalyzer
         //public double wind_deg { get; set; }
         //[JsonProperty("wind_gust")]
         //public double wind_gust { get; set; }
-        //[JsonProperty("createdAt")]
-        //public double createdAt { get; set; }
+        [JsonProperty("createdAt")]
+        public DateTime createdAt { get; set; }
         //[JsonProperty("updatedAt")]
         //public double updatedAt { get; set; }
         [JsonProperty("city")]
