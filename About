@@ -1,0 +1,38 @@
+                        <Grid Background="#250845" Margin="-1,-1,0,0">
+                            <Image Source="images/about.jpg"
+                                   Opacity="0.4"
+                                   Margin="20"/>
+                            <TextBlock TextAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Style="{StaticResource textInCopy}"
+                                       Width="600">
+                                «Апрель, 22, воскресенье. 
+                                <LineBreak/>
+                                Поутру ветер норд – вест; 
+                                <LineBreak/>
+                                вода також стоит, как выше упомянуто. 
+                                <LineBreak/>
+                                Пасмурно и студено… 
+                                <LineBreak/>
+                                в полдни ветр малый норд – вест 
+                                <LineBreak/>
+                                и дождь после полудня.
+                                <LineBreak/>
+                                Тихо и красный день до самого вечера»
+                                <LineBreak/>
+                                Вице–адмирал Корнелиус Крюйс.
+                                <LineBreak/>
+                                Первые наблюдения за погодой.
+                                <LineBreak/>
+                                Санкт–Петербург. 1722 год. 
+                                <LineBreak/>
+                                <LineBreak/>
+                                Weather Analyzer
+                                <LineBreak/>
+                                Copyright 2021. All rights reserved.
+                                <LineBreak/>
+                                Version Beta 0.1.18
+                                <LineBreak/>
+                            </TextBlock>
+                        </Grid>
